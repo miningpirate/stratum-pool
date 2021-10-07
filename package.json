@@ -1,0 +1,58 @@
+{
+  "name": "foundation-stratum",
+  "version": "0.0.8",
+  "description": "High performance Stratum poolserver in Node.js",
+  "main": "./scripts/main.js",
+  "keywords": [
+    "stratum",
+    "mining",
+    "pool",
+    "server",
+    "poolserver",
+    "bitcoin",
+    "litecoin",
+    "scrypt"
+  ],
+  "homepage": "https://github.com/blinkhash/foundation-stratum",
+  "bugs": {
+    "url": "https://github.com/blinkhash/foundation-stratum/issues"
+  },
+  "license": "GPL-2.0",
+  "author": {
+    "name": "Nick Sarris"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "verbose": true
+  },
+  "scripts": {
+    "clean": "eslint . --ext .js --ignore-pattern node_modules/",
+    "clean:fix": "eslint . --ext .js --fix --ignore-pattern node_modules/",
+    "test": "jest --coverage"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blinkhash/foundation-stratum.git"
+  },
+  "dependencies": {
+    "async": "1.5.2",
+    "bchaddrjs": "^0.5.2",
+    "bignum": "0.13.1",
+    "foundation-equihash": "0.0.3",
+    "foundation-kawpow": "0.0.1",
+    "foundation-multi-hashing": "0.0.1",
+    "foundation-utxo-lib": "0.0.1",
+    "sha3": "^2.1.2"
+  },
+  "devDependencies": {
+    "codecov": "^3.8.1",
+    "eslint": "^7.23.0",
+    "jest": "^26.6.3",
+    "nock": "^13.0.10"
+  },
+  "engines": {
+    "node": ">=12.16"
+  },
+  "readmeFilename": "README.md"
+}
